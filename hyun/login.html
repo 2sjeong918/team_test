@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>페이스북 본인인증</title>
+    
+</head>
+
+<body>
+    <script>
+        function statusChangeCallback(response) {
+    console.log('response:'+ response);
+
+    //  status: 'connected',
+    // authResponse: {
+    //     accessToken: '...',
+    //     expiresIn:'...',
+    //     signedRequest:'...',
+    //     userID:'...'
+    // }
+}
+
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1694431924199335', //이 프로젝트 id값이됨.
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+
+
+    FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    <fb:login-button 
+        scope="public_profile,email" 
+        onlogin="checkLoginState();">
+    </fb:login-button>
+    <div id="status"></div>
+</body>
+</html>
