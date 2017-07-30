@@ -1,0 +1,66 @@
+@import "susy/susy"
+
+@import "config"
+
+
+
+body 
+   margin: 0
+   padding: 0
+
+.wrapper 
+  // 전달인자 1200px은 최대 너비를 말합니다.
+  +container(1200px)
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+
+.box
+    position: relative;
+    height: 0;
+    overflow: hidden;    
+
+
+
+img
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);  
+
+.height-auto 
+    width: 100%;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;    
+
+
+  
+
+
+@media screen and (min-width : 801px)
+   .box
+        width: 30%;
+        padding-top: 30%;
+  
+
+@media screen and (min-width : 401px) and (max-width : 800px)
+  .box
+        width: 33.333333333%;
+        padding-top: 33.33333333%;  
+
+@media screen and (max-width : 400px)    
+  .box
+        width: 100%;
+        padding-top: 100%;
+  
+    
+
+
+
+
