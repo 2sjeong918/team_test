@@ -25,6 +25,49 @@ body {
   clear: both;
 }
 
+@media screen and (min-width: 769px) {
+  .wrapper {
+    background-image: linear-gradient(to right, transparent 10%, rgba(102, 102, 255, 0.15) 10%, rgba(179, 179, 255, 0.15) 90%, transparent 90%);
+    background-size: 8.33333%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+  .wrapper .box {
+    width: 30%;
+    padding-top: 30%;
+  }
+}
+
+@media screen and (min-width: 479px) and (max-width: 768px) {
+  .wrapper {
+    background-image: linear-gradient(to right, transparent 10%, rgba(102, 102, 255, 0.15) 10%, rgba(179, 179, 255, 0.15) 90%, transparent 90%);
+    background-size: 12.5%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+  .wrapper .box {
+    width: 33.333333333%;
+    padding-top: 33.33333333%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    background-image: linear-gradient(to right, transparent 10%, rgba(102, 102, 255, 0.15) 10%, rgba(179, 179, 255, 0.15) 90%, transparent 90%);
+    background-size: 50%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+  .wrapper .box {
+    width: 100%;
+    height: 100%;
+    padding-top: 100%;
+  }
+}
+
 .box {
   position: relative;
   height: 0;
@@ -46,27 +89,6 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-}
-
-@media screen and (min-width: 801px) {
-  .box {
-    width: 30%;
-    padding-top: 30%;
-  }
-}
-
-@media screen and (min-width: 401px) and (max-width: 800px) {
-  .box {
-    width: 33.333333333%;
-    padding-top: 33.33333333%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .box {
-    width: 100%;
-    padding-top: 100%;
-  }
 }
 
 /*# sourceMappingURL=../map/susy-grid.css.map */
