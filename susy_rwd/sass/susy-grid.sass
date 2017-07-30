@@ -2,6 +2,13 @@
 
 @import "config"
 
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 960px;
+$wide: 1200px;
+
+
+
 
 
 body 
@@ -10,17 +17,39 @@ body
 
 .wrapper 
   // 전달인자 1200px은 최대 너비를 말합니다.
-  +container(1200px)
+  +container(1200px);
   height: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  @media screen and (min-width : 769px)
+    +show-grid(12 at $wide);   
+    .box 
+        width: 30%;
+        padding-top: 30%;
+
+
+  @media screen and (min-width : 479px) and (max-width : 768px)
+        +show-grid(8 at $tablet); 
+        .box 
+            width: 33.333333333%;
+            padding-top: 33.33333333%;  
+
+  @media screen and (max-width : 480px)    
+        +show-grid(2 at $mobile); 
+        .box
+            width: 100%;
+            height: 100%;
+            padding-top: 100%;
+    
+    
 
 .box
     position: relative;
     height: 0;
     overflow: hidden;    
+    
 
 
 
@@ -40,26 +69,8 @@ img
     left: 0;    
 
 
-  
 
 
-@media screen and (min-width : 801px)
-   .box
-        width: 30%;
-        padding-top: 30%;
-  
-
-@media screen and (min-width : 401px) and (max-width : 800px)
-  .box
-        width: 33.333333333%;
-        padding-top: 33.33333333%;  
-
-@media screen and (max-width : 400px)    
-  .box
-        width: 100%;
-        padding-top: 100%;
-  
-    
 
 
 
