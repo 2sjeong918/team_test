@@ -1,15 +1,13 @@
+   
 <template>
   <div id="app">
     <img :src="vue.path" :alt="vue.label">
+      <router-link :to="{}"></router-link>
       <router-view></router-view>
   </div>
 </template>
 
 <script>
-
-import LogIn  from './components/LogIn/LogIn'
-import Mypage from './components/Mypage/Mypage'
-
 export default {
   name: 'app',
   data () {
@@ -21,10 +19,6 @@ export default {
         label: 'Vue.js'
       }
     }
-  },
-  components: {
-    LogIn,
-    Mypage
   }
 }
 </script>

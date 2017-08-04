@@ -7,7 +7,6 @@
       <a href>로그인</a>
     </router-link>
   </ul>
-  
 </template>
 <script>
 
