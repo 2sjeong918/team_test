@@ -100,10 +100,13 @@ export default {
   //
   .join-page-wapper
     // background-color: powderblue
+    // 컬럼 몇칸 쓸거야 
     +span(4)
+    // 뒤에서 몇칸
     +span(last 8)
     // display: flex
     // flex-direction: column
+    //위에서 부터 몇칸 쓸거야
     margin-top: leading(5)
 
   .join-page-center 
@@ -123,131 +126,131 @@ export default {
     margin-top: leading(2)
     padding-left: span(3.5)
   
-  // .join-page-input-group
-  //   // background: yellow
-  //   height: leading(9)
-  //   padding-left: span(1.5)
+  .join-page-input-group
+    // background: yellow
+    height: leading(9)
+    padding-left: span(1.5)
 
-  // .join-input
-  //   margin-bottom: span(-0.5)
-  //   line-height: 2.55
+  .join-input
+    margin-bottom: span(-0.5)
+    line-height: 2.55
 
-  // .join-name-input
-  //   width: 285px
-  //   height: 36px
-  //   font-family: NotoSansKR
-  //   font-size: 16px
-  //   margin-bottom: span(0.2)
+  .join-name-input
+    width: 285px
+    height: 36px
+    font-family: NotoSansKR
+    font-size: 16px
+    margin-bottom: span(0.2)
     
-  // .join-email-input
-  //   width: 285px
-  //   height: 36px
-  //   font-family: NotoSansKR
-  //   font-size: 16px
-  //   margin-top: leading(1)
-  //   margin-bottom: span(0.2)
-  //   // line-height: 2.55
+  .join-email-input
+    width: 285px
+    height: 36px
+    font-family: NotoSansKR
+    font-size: 16px
+    margin-top: leading(1)
+    margin-bottom: span(0.2)
+    // line-height: 2.55
     
-  // .join-pw-input
-  //   width: 285px
-  //   height: 36px
-  //   font-family: NotoSansKR
-  //   font-size: 16px
-  //   margin-top: leading(1)
-  //   // line-height: 2.55
+  .join-pw-input
+    width: 285px
+    height: 36px
+    font-family: NotoSansKR
+    font-size: 16px
+    margin-top: leading(1)
+    // line-height: 2.55
 
-  //   // 화워 그룹 동의 
-  // .join-page-agreememt-list
-  //   // background: green
-  //   padding-left: span(2.5)
+    // 화워 그룹 동의 
+  .join-page-agreememt-list
+    // background: green
+    padding-left: span(2.5)
     
-  // checkbox
-  //   width: 14px
-  //   height: 14px
+  checkbox
+    width: 14px
+    height: 14px
 
-  // .login-page-agreement-label
-  //   // background: yellow
-  //   width: 193px
-  //   height: 14px
-  //   font-family: NotoSansKR
-  //   font-size: 13px
-  //   line-height: 1.65
-  //   color: #ffffff
-  //   padding-left: span(0.5)
+  .login-page-agreement-label
+    // background: yellow
+    width: 193px
+    height: 14px
+    font-family: NotoSansKR
+    font-size: 13px
+    line-height: 1.65
+    color: #ffffff
+    padding-left: span(0.5)
     
 
-  // .login-page-agreement-sub-text-link
-  //   color: #ffffff
+  .login-page-agreement-sub-text-link
+    color: #ffffff
 
-  // // 가입하기
-  // .join-page-submit
-  //   width: 177px
-  //   height: 42px
-  //   background-color: #1e0b65
-  //   text-align: center
-  //   margin-top: leading(1)
-  //   color: #ffffff
-  //   font-family: NotoSansKR
-  //   font-size: 16px
-  //   // line-height: 1.65
+  // 가입하기
+  .join-page-submit
+    width: 177px
+    height: 42px
+    background-color: #1e0b65
+    text-align: center
+    margin-top: leading(1)
+    color: #ffffff
+    font-family: NotoSansKR
+    font-size: 16px
+    // line-height: 1.65
   
-  // .join-btn
-  //   // text-decoration: none 
-  //   width: 50px
-  //   height: 20px
-  //   padding-left: span(3.37)
+  .join-btn
+    // text-decoration: none 
+    width: 50px
+    height: 20px
+    padding-left: span(3.37)
 
-  // // 로그인
-  // .btn
-  //   background: yellow
+  // 로그인
+  .btn
+    background: yellow
 
-  // .login-input
-  //  +span(12)
-  // //  background: gleen
-  // //  width: 42px
-  // //  height: 16px
-  // //  text-align: center
-  //   // margin-top: leading(1)
-  //   // margin-bottom: leading(-0.1)
-  //   color: #ffffff
-  //   font-family: NotoSansKR
-  //   font-size: 16px
-  //   padding-left: span(0.5)
-  //   // display: inline-block
+  .login-input
+   +span(12)
+  //  background: gleen
+  //  width: 42px
+  //  height: 16px
+  //  text-align: center
+    // margin-top: leading(1)
+    // margin-bottom: leading(-0.1)
+    color: #ffffff
+    font-family: NotoSansKR
+    font-size: 16px
+    padding-left: span(0.5)
+    // display: inline-block
     
    
-  // .login-page-submit
+  .login-page-submit
    
-  //   width: 177px
-  //   height: 42px
-  //   text-align: center
-  //   background-color: #1e0b65
-  //   margin-top: leading(3)
-  //   // colsr: #ffffff
-  //   // padding-left: span(5)
-  //   // width: 373px
+    width: 177px
+    height: 42px
+    text-align: center
+    background-color: #1e0b65
+    margin-top: leading(3)
+    // colsr: #ffffff
+    // padding-left: span(5)
+    // width: 373px
    
 
-  // // 페이스북으로 로그인 
-  // .login-facebook-link
-  //   // background: pink
-  //   width: 173px
-  //   height: 42px
-  //   display: inline-block
-  //   text-align: center
-  //   margin-top: leading(0.3)
-  //   padding-left: span(3.5)
+  // 페이스북으로 로그인 
+  .login-facebook-link
+    // background: pink
+    width: 173px
+    height: 42px
+    display: inline-block
+    text-align: center
+    margin-top: leading(0.3)
+    padding-left: span(3.5)
 
 
-  // .facebook-login
-  //   // background: blue
-  //   width: 112px
-  //   height: 20px
-  //   font-family: NotoSansKR
-  //   font-size: 12px
-  //   line-height: 3
-  //   color: #ffffff
-  //   padding-left: span(0.5)
+  .facebook-login
+    // background: blue
+    width: 112px
+    height: 20px
+    font-family: NotoSansKR
+    font-size: 12px
+    line-height: 3
+    color: #ffffff
+    padding-left: span(0.5)
     
  
    
