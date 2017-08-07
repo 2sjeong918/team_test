@@ -100,13 +100,10 @@ export default {
   //
   .join-page-wapper
     // background-color: powderblue
-    // 컬럼 몇칸 쓸거야 
     +span(4)
-    // 뒤에서 몇칸
     +span(last 8)
     // display: flex
     // flex-direction: column
-    //위에서 부터 몇칸 쓸거야
     margin-top: leading(5)
 
   .join-page-center 
