@@ -63,7 +63,7 @@ export default {
     // background-position: 50px 0
     background-size: 100%
   .container
-    +container(1280px 12)
+    +container(1190px 12)
   .logo
     +span(3)
     height: leading(4)
@@ -112,7 +112,7 @@ export default {
       margin-top: leading(2)
   .cg-items
     li
-      +span(3)
+      +span(2 of 10)
       // height: auto
       background: #999
       margin-top: leading(2)
