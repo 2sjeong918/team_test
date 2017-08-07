@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <wire-frame></wire-frame>
+    
+    <carousel></carousel>
   </div>
 </template>
 
 <script>
-import WireFrame from './components/WireFrame.vue';
-import Home from './components/Home';
+// import WireFrame from './components/WireFrame.vue';
+// import Search from './components/Search'
+import Carousel from './components/Carousel'
 
 export default {
   name: 'app',
   components: {
-    WireFrame, Home
+    // WireFrame, 
+    // Search
+    Carousel
     },
   data () {
     return {
