@@ -1,0 +1,33 @@
+$base-font-size: 16px !default;
+// 글줄 사이(행간) 비율
+$leading-scale: 1.5;
+// 글줄 사이(행간) 간격
+$leading: $base-font-size * $leading-scale;
+$guide-height: 100%;
+.show-grid {
+  position: relative;
+}
+.show-grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: $guide-height;
+}
+.show-grid::before {
+  // 지역 변수
+  $leading-limit: $leading - 1;
+
+  z-index: 10000;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    transparent $leading-limit,
+    #0cf $leading-limit
+  );
+  background-size: 1px $leading;
+}
+
+@function leading($n) {
+  @return $leading * $n;
+}

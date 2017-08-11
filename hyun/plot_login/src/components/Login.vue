@@ -128,7 +128,7 @@ export default {
     font-size: 16px
     font-weight: bold
     text-align: center
-    color: #ffffff;
+    color: #ffffff
     padding-left: span(2.3)
 
   .login-button-warpper
