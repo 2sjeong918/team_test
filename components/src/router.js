@@ -21,28 +21,45 @@ import Search       from './components/Home/Search.vue'
 //detail 
 import Detail       from './components/Detail/Detail.vue'
 
-const routes = [
-  { path: '/', component: Start },
-  { path: '/signin', component: SignIn },
-  { path: '/signup', component: SignUp },
-  { path: '*', redirect: '/' },
-  {  path: '/home', component: Home ,
-    children:[
-      {  path: '/home', component: Main },
-      {  path: '/home/detail', component: Detail },
-      {  path: '/home/search', component: Search },
-      {  path: '/home/mypage', component: Mypage, 
+// const routes = [
+//   { path: '/', component: Start },
+//   { path: '/signin', component: SignIn },
+//   { path: '/signup', component: SignUp },
+//   { path: '*', redirect: '/' },
+//   {  path: '/home', component: Home ,
+//     children:[
+//       {  path: '/home', component: Main },
+//       {  path: '/home/detail', component: Detail },
+//       {  path: '/home/search', component: Search },
+//       {  path: '/home/mypage', component: Mypage, 
+//         children:[
+//           {  path: '/home/mypage', component: Wishlist },
+//           {  path: '/home/mypage/display', component: Display },
+//           {  path: '/home/mypage/comments', component: Comments }
+//         ]
+//       },
+//     ]
+//   },
+// ];
+const routes =[
+  // {path: '/', name: 'start', component: Start},
+  {path: '/signin', name: 'signin', component: SignIn},
+  {path: '/signup', name: 'signup', component: SignUp},
+  {path: '*', redirect: '/' },
+  {path: '/', name: '', component: Home,
+    children: [
+      {path: '/mypage', name: 'mypage', component: Mypage,
         children:[
-          {  path: '/home/mypage', component: Wishlist },
-          {  path: '/home/mypage/display', component: Display },
-          {  path: '/home/mypage/comments', component: Comments }
+          {path: '/mypage', component: Wishlist},
+          {path: '/mypage/display', component: Display},
+          {path: '/mypage/comments', component: Comments}
         ]
       },
+      {path: '/search', name: 'search', component: Search},
+      {path: '/detail', name: 'detail', component: Detail}
     ]
   },
-
-  
-];
+]
 
 const router = new VueRouter({
   mode: 'history',
